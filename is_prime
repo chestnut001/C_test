@@ -3,6 +3,7 @@
 #include<stdio.h>
 #include<math.h>
 
+//判断一个数是否为素数
 int is_prime(int n)
 {
 	int count = 0;
@@ -13,7 +14,7 @@ int is_prime(int n)
 }
 
 
-//二分查找
+//打印100~200之间的素数
 int main()
 {
 	for (int i = 100; i <= 200; i++)
