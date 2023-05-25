@@ -1,0 +1,17 @@
+//判断year是否为闰年,是闰年返回1，否则返回0
+int is_leap_year(int year)
+{
+	if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+		return 1;
+	else 
+		return 0;
+}
+int main()
+{
+	for (int i = 1000; i <= 2000; i++)
+	{
+		//判断i是否为闰年
+		if (is_leap_year(i) == 1)
+			printf("%d  ",i);
+	}	
+}
